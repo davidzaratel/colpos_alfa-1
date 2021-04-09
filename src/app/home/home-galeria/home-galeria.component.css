@@ -1,0 +1,82 @@
+
+/*Container general*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+/*Imagen dentro de la card*/
+.container .card img{
+    border-radius: 5% 5% 0% 0%;
+    width: 100%;
+    margin: 0;
+}
+
+/*Botones de prev y next*/
+button{
+    height: 2rem;
+    width: 2rem;
+    border-color: white;
+    background-color: #00000000;
+    position: relative;
+    top: 50%;
+    box-shadow: none;
+    cursor: pointer;
+    border-width: 0;
+}
+
+button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.prev button{
+    background: url("https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/home%2Fleft-arrow.svg?alt=media&token=bfd5a07c-a796-4462-a4d9-fdad6d0cd684");
+    background-repeat: no-repeat;
+}
+
+.prev{
+    margin-right: 1%;
+}
+
+.next button{
+    background: url("https://firebasestorage.googleapis.com/v0/b/colpos-storage.appspot.com/o/home%2Fright-arrow.svg?alt=media&token=07d90e64-3acb-4c4e-8689-4645c397e54a");
+    background-repeat: no-repeat;
+}
+
+/*Contenedor de cards*/
+
+.gal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container .prev img,
+.container .next img{
+    width: 10%;
+}
+
+
+/* Card */
+.container .card{
+    width: 20%;
+    height: auto;
+    padding: 0;
+    margin: 5% 3% 0% 2%;
+    border-radius: 5%;
+}
+
+.container .card .content{
+    padding: 5%;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.title{
+    font-size: 46px;
+    padding: 3rem 0rem 0rem 0rem;
+}
